@@ -1,0 +1,84 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+@media (min-aspect-ratio: 16/9) {
+    :root {
+        --unit: (1vh/8.1);
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    :root {
+        --unit: (1vw/14.4);
+    }
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.headerContainer{
+    width: 100vw;
+    height: calc(112 * var(--unit));
+    display: grid;
+    place-content: center;
+
+}
+.headerText{
+    font: 500 calc(40 * var(--unit)) 'Satoshi';
+    color: #333335;
+}
+
+.nameContainer{
+    width: 100vw;
+    height: calc(112 * var(--unit));
+    display: grid;
+    place-content: center;
+}
+.nameText{
+    font: 500 calc(24 * var(--unit)) 'IBM Plex Sans Thai';
+    color: #333335;
+}
+
+.contentContainer{
+    width: 100vw;
+    height: calc(540 * var(--unit));
+    display: flex;
+}
+
+.sizeContainer{
+    width: 50vw;
+    height: calc(540 * var(--unit));
+}
+
+.screenText{
+    width: 50vw;
+    height: calc(64 * var(--unit));
+    font: 500 calc(24 * var(--unit)) 'IBM Plex Sans Thai';
+    display: grid;
+    place-content: center;
+}
+
+.youtubeContainer{
+    width: 50vw;
+    height: calc(64 * var(--unit));
+    font: 500 calc(24 * var(--unit)) 'Satoshi';
+    display: grid;
+    place-content: center;
+}
+
+.screenExample{
+    width: 50vw;
+    height: calc(428 * var(--unit));
+    background: url('./screen.PNG') no-repeat center #fafafa;
+    background-size: contain;
+}
+.iframeYoutube{
+    width: 50vw;
+    height: calc(428 * var(--unit));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
